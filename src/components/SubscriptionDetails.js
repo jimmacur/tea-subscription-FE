@@ -13,8 +13,14 @@ const SubscriptionDetails = ({ subscription }) => {
     fetchDetails();
   }, [subscription]);
 
-    const handleStatusToggle = async () => {
+  const handleStatusToggle = async () => {
     if (details) {
+      const confirmationMessage = details.status === "active"
+        ? `Are you sure you want to cancel the subscription for ${details.title}?`
+        : `Are you sure you want to resume the subscription for ${details.title}?`;
+
+      const confirmation = window.confirm(confirmationMessage);
+
       const newStatus = details.status === 'active' ? 'canceled' : 'active';
       await updateSubscriptionStatus(details.id, newStatus);
       setDetails({ ...details, status: newStatus });
@@ -28,7 +34,7 @@ const SubscriptionDetails = ({ subscription }) => {
   console.log(details);
   return (
     <div className="subscription-details">
-      <h2>{title}</h2>
+      <h2>{title} 🍵 </h2>
       <hr />
       <h3>Details</h3>
       <p>Price: {price}</p>
@@ -38,7 +44,7 @@ const SubscriptionDetails = ({ subscription }) => {
       <h3>Teas</h3>
       <ul>
         {teas && teas.length > 0 ? teas.map((tea, index) => (
-          <li key={index}>
+          <li className="tea" key={index}>
             <strong>{tea.title}</strong>: { tea.description } 
           </li>
         )) : <li>No teas</li>}

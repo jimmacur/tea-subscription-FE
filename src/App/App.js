@@ -3,7 +3,6 @@ import SubscriptionList from '../components/SubscriptionList';
 import Modal from '../components/Modal';
 import SubscriptionDetails from '../components/SubscriptionDetails';
 import { getSubscriptions } from '../services/subscriptionService';
-import SearchSubscription from '../components/SearchSubscription';
 import './App.css';
 
 const App = () => {
@@ -41,7 +40,7 @@ const App = () => {
           <SubscriptionDetails subscription={selectedSubscription} />
         )}
       </Modal>
-      {/* <SearchSubscription /> */}
+
     </div>
   )
 }

@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  height: 100%
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ccd5ae 0%, #ccd5ae 20%, #fefae0 40%, #fefae0 100%);
+  display: flex;
+  flex-direction: column;
+}

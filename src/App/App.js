@@ -40,7 +40,6 @@ const App = () => {
           <SubscriptionDetails subscription={selectedSubscription} />
         )}
       </Modal>
-
     </div>
   )
 }

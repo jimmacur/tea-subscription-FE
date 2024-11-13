@@ -21,4 +21,21 @@ html, body {
 .drinking-tea {
   height: 80px;
   margin: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.drinking-tea:hover {
+  animation: pulse 1.5s infinite;
+  filter: hue-rotate(90deg) brightness(1.4);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 0, 255, 1), 0 0 30px rgba(255, 0, 255, 0.7);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: brightness(1.6);
+  }
 }

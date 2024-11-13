@@ -1,0 +1,38 @@
+.search-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fefae0;
+  padding: 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  width: 60%;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.subscription-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.subscription-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subscription-list li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}

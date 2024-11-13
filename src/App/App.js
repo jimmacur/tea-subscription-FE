@@ -3,6 +3,7 @@ import SubscriptionList from '../components/SubscriptionList';
 import Modal from '../components/Modal';
 import SubscriptionDetails from '../components/SubscriptionDetails';
 import { getSubscriptions } from '../services/subscriptionService';
+import SearchSubscription from '../components/SearchSubscription';
 import './App.css';
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
     <div className="App">
       <h1 className="main-header">
         Tea Subscriptions 
-        <img src="/assets/drinking_tea.jpg" alt="Subscription" style={{ width: '60px', height: '60px' }} ></img>   
+        <img src="/assets/drinking_tea.jpg" alt="drinking-tea" className="drinking-tea"></img>   
       </h1>
       <SubscriptionList
         subscriptions={subscriptions}
@@ -40,6 +41,7 @@ const App = () => {
           <SubscriptionDetails subscription={selectedSubscription} />
         )}
       </Modal>
+      {/* <SearchSubscription /> */}
     </div>
   )
 }

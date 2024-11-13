@@ -2,6 +2,12 @@
 
 This Tea Subscription Frontend is built using React, and it consumes the **Tea Subscription API** (Rails backend) to manage subscriptions, teas, and customers. The frontend focuses on creating an intuitive user interface that allows customers to interact with the subscription service.
 
+<img src="./public/assets/wireframe.png" alt="homepage view" width="50%">
+
+<img src="./public/assets/main.png" alt="homepage view" width="50%">
+
+<img src="./public/assets/modal.png" alt="homepage view" width="50%">
+
 ### Features
 ---
 - **Subscription Management**: Users can view all subscriptions, toggle between active and inactive status, and modify subscription frequencies.

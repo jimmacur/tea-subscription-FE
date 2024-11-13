@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Tea Subscription 🫖 (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Tea Subscription Frontend is built using React, and it consumes the **Tea Subscription API** (Rails backend) to manage subscriptions, teas, and customers. The frontend focuses on creating an intuitive user interface that allows customers to interact with the subscription service.
 
-## Available Scripts
+### Features
+---
+- **Subscription Management**: Users can view all subscriptions, toggle between active and inactive status, and modify subscription frequencies.
+- **User Interface**: A clean, responsive interface optimized for desktop, tablet, and mobile devices.
+- **Error Handling & User Feedback**: Ensures smooth user experience with error handling for failed API calls and interactive feedback when status or frequency changes.
+- **Testing**: Frontend tested using Cypress to ensure proper functionality and user experience.
 
-In the project directory, you can run:
+[GitHub Project Board](https://github.com/users/jimmacur/projects/12)
 
-### `npm start`
+[Figma Planning Project Board](https://www.figma.com/board/52FUFMkcAHFmeJ2qYQCtzJ/Take-Home-final-mod-3?node-id=0-1&node-type=canvas&t=3rete0JI4XdkUFN2-0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Context
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This **Tea Subscription Service** project was completed as part of a simulated technical challenge, focusing on both **Frontend (FE)** and **Backend (BE)** development. The project was designed with a strict 2-day timeframe, with about **8 hours dedicated to the frontend** and **8 hours dedicated to the backend**.
 
-### `npm run build`
+The goal was to develop a fully functional subscription service that could manage customer subscriptions to tea, with endpoints to manage subscriptions, teas, and customers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- **Backend (BE)**: Ruby on Rails, RSpec for testing, Simplecov for test coverage.
+- **Frontend (FE)**: React, Cypress for frontend testing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
+---
+1. Fork and clone this BE repo 
+[Tea Subscription BE repo](https://github.com/jimmacur/tea-subscription-BE)
+2. `cd` into the repo
+2. Run these commands in your terminal
+  - `bundle install`
+  -  `rails db:{drop, create, migrate, seed}`
+  -  `rails s`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Fork this FE repo
+[Tea Subscription FE repo]()
+5. `cd` into cloned repo
+6. Run `npm install`
+7. Run `npm start`
+8.  Enter `control + c` in your terminal to stop running the React app at any time
+9. To run Cypress tests, use `npx cypress open`
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Jim Macur - [linkedin](https://www.linkedin.com/in/jimmacur/) - [gitHub](https://github.com/jimmacur) - jim.macur@gmail.com 
 
-### Code Splitting
+## Learning Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Project Planning and Time Management**: Manage and deliver a fully functional frontend application within a short 2-day timeframe, simulating a real-world technical challenge.
 
-### Analyzing the Bundle Size
+- **Frontend Development**: Build a responsive, user-friendly UI using React, integrating smoothly with a Ruby on Rails API. Focus on dynamic content loading and state management.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **API Integration**: Interact with a Rails API to fetch and update subscription data, including subscription status and frequency, with error handling and appropriate user feedback.
 
-### Making a Progressive Web App
+- **User Interface Design**: Create a clean, intuitive user interface that allows for easy subscription management, including toggling between subscription statuses and changing subscription frequencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Responsive Design**: Implement a mobile-first design that ensures the application is fully responsive and optimized for desktop, tablet, and mobile devices.
 
-### Advanced Configuration
+- **Testing and Test-Driven Development (TDD)**: Write frontend tests using Cypress to ensure the functionality and user interactions work as expected, with a focus on maintaining high test coverage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Time-Efficient Development**: Prioritize tasks effectively to develop key frontend features within a limited time frame while ensuring the application remains functional and user-friendly.
 
-### Deployment
+- **Professional Development**: Simulate a real-world software development process by completing a frontend application in a short period, handling both individual responsibilities and project management.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Version Control and Collaboration**: Use Git for version control, applying best practices in code collaboration, managing branches, and committing often to track progress and facilitate collaboration.

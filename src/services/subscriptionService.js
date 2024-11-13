@@ -21,3 +21,19 @@ export const getSubscriptionById = async (id) => {
     return null;
   }
 };
+
+export const updateSubscriptionStatus = async (id, newStatus) => {
+  try {
+    const response = await fetch(`${API_URL}/subscriptions/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status: newStatus })
+    });
+    
+    if (!response.ok) throw new Error('Failed to update subscription status');
+    return true;
+  } catch (error) {
+    console.error('Error updating subscription status:', error);
+    return false;
+  }
+}

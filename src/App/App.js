@@ -27,7 +27,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="main-header">🍵 Tea Subscriptions 🍵</h1>
+      <h1 className="main-header">
+        Tea Subscriptions 
+        <img src="/assets/drinking_tea.jpg" alt="drinking-tea" className="drinking-tea"></img>   
+      </h1>
       <SubscriptionList
         subscriptions={subscriptions}
         onShowDetails={handleSubscriptionSelect}

@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Tea Subscriptions</h1>
+      <h1 className="main-header">🍵 Tea Subscriptions 🍵</h1>
       <SubscriptionList
         subscriptions={subscriptions}
         onShowDetails={handleSubscriptionSelect}

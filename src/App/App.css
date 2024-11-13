@@ -9,3 +9,8 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
+.main-header {
+  text-align: center;
+  font-size: 4em;
+}

@@ -2,11 +2,9 @@
 
 This Tea Subscription Frontend is built using React, and it consumes the **Tea Subscription API** (Rails backend) to manage subscriptions, teas, and customers. The frontend focuses on creating an intuitive user interface that allows customers to interact with the subscription service.
 
-<img src="./public/assets/wireframe.png" alt="homepage view" width="50%">
+<img src="./public/assets/wireframe.png" alt="homepage view" width="90%">
 
-<img src="./public/assets/main.png" alt="homepage view" width="50%">
-
-<img src="./public/assets/modal.png" alt="homepage view" width="50%">
+<img src="./public/assets/tea-subs.gif" alt="homepage view" width="50%">
 
 ### Features
 ---
@@ -15,10 +13,9 @@ This Tea Subscription Frontend is built using React, and it consumes the **Tea S
 - **Error Handling & User Feedback**: Ensures smooth user experience with error handling for failed API calls and interactive feedback when status or frequency changes.
 - **Testing**: Frontend tested using Cypress to ensure proper functionality and user experience.
 
-[GitHub Project Board](https://github.com/users/jimmacur/projects/12)
+[GitHub Project Board](https://github.com/users/jimmacur/projects/13)
 
 [Figma Planning Project Board](https://www.figma.com/board/52FUFMkcAHFmeJ2qYQCtzJ/Take-Home-final-mod-3?node-id=0-1&node-type=canvas&t=3rete0JI4XdkUFN2-0)
-
 
 
 ## Context
@@ -47,7 +44,7 @@ The goal was to develop a fully functional subscription service that could manag
   -  `rails s`
 
 4. Fork this FE repo
-[Tea Subscription FE repo]()
+[Tea Subscription FE repo](https://github.com/jimmacur/tea-subscription-FE)
 5. `cd` into cloned repo
 6. Run `npm install`
 7. Run `npm start`
